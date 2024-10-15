@@ -1,7 +1,7 @@
 import logging
 from pyrogram.errors import InputUserDeactivated, UserNotParticipant, FloodWait, UserIsBlocked, PeerIdInvalid
 from info import AUTH_CHANNEL, LONG_IMDB_DESCRIPTION
-from imdb import Cinemagoer
+from imdb import IMDb
 import asyncio
 import shortzy 
 from pyrogram.types import Message, InlineKeyboardButton
@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
 BANNED = {}
-imdb = Cinemagoer() 
+imdb = IMDb() 
  
 class temp(object):
     ME = None
